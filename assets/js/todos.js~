@@ -5,7 +5,7 @@ $("li").click(function() {
 
 // Click on X to delete the todo
 $("span").click(function(event) {
-    $(this).parent().fadeOut(function() {
+    $(this).parent().fadeOut(function(e) {
         $(this).remove();
     });
     event.stopPropagation();
